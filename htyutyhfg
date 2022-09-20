@@ -39,7 +39,7 @@ end)
 
 
 -- DupeTradeScam
-local Dupe-Trade-Scam = Window:NewTab("Dupe-Trade-Scam")
+local DupeTradeScam = Window:NewTab("Dupe-Trade-Scam")
 local DupeTradeScamSection = DupeTradeScam:NewSection("Wait 1 munite and excute")
 
 
